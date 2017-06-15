@@ -48,7 +48,7 @@ These instructions are OS X specific, but the overall solution should work on an
 
 	```
 	$ vagrant plugin install vagrant-hostsupdater
-	`
+	```
 
 ### Fresh WP install
 
