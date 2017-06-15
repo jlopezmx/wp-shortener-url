@@ -13,23 +13,6 @@ Intended to be as simple as possible:
 
 This Vagrant box and provisioning is based on (https://github.com/digitalquery/wp-vagrant) 
 
-## What's included in the VM?
-
-* Ubuntu 14.04 LTS (Trusty Tahir)
-* Nginx, listening on port 80
-* MySQL, listening for remote connections
-* Choose between  PHP 5.5, 5.6 or 7.0, with OpCache and XDebug
-* PHP-FPM
-* [Byobu](http://byobu.co/)
-* [WP-CLI](wp-cli.org)
-* APCu
-* Dump database automatically on `vagrant destroy`
-
-
-## Instructions
-
-These instructions are OS X specific, but the overall solution should work on any platform that Vagrant and VirtualBox support.
-
 ### Before you start
 
 * Install VirtualBox
