@@ -8,13 +8,6 @@ Intended to be as simple as possible:
 #### Summary
 
 * Quickly create a fresh WP instance served up via the Vagrant server.
-* Optionally specify which version of WP to install
-* Choose PHP 5.5, 5.6 or 7.0
-* Can be dropped into an existing WP directory to provide a LEMP testing and development server with minimal config changes
-* Can load database dump as part of provisioning
-* Renames all domain references using WP-CLI
-* Dumps the database to the shared folder on `vagrant destroy` — (this needs the [vagrant triggers plugin](https://github.com/emyl/vagrant-triggers) to be installed from [(https://github.com/emyl/vagrant-triggers)](https://github.com/emyl/vagrant-triggers))
-* Remote debugging using XDebug
 
 ## Acknowledgements
 
@@ -46,12 +39,14 @@ These instructions are OS X specific, but the overall solution should work on an
 	* [Vagrant site (https://www.vagrantup.com/downloads.html)](https://www.vagrantup.com/downloads.html)
 
 * Install Vagrant triggers 
-	* ```
+	
+	```
 	$ vagrant plugin install vagrant-triggers
 	```
 	
 * Install vagrant-hostupdater 
-	* ```
+
+	```
 	$ vagrant plugin install vagrant-hostsupdater
 	`
 
@@ -60,7 +55,9 @@ These instructions are OS X specific, but the overall solution should work on an
 Use these instructions if you want to create a new WP site with the default empty database.
 
 1. Fire up Vagrant to create the VM and then run the provisioning scripts
-	* `vagrant up`
+	```
+	$ vagrant up
+	```
 	* This may take a little while as the provisioning scripts download and install everything
 2. Browse to 192.168.50.2 - you should see the default twentyfourteen theme
 
